@@ -1,0 +1,765 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+*, ::after, ::before {
+    box-sizing: inherit
+}
+
+@font-face {
+    font-family: 'Intro Head';
+    src: url('https://images.livrariasaraiva.com.br/estatico/2017/promo/10-outubro/livro-e-na-saraiva/IntroRust-Base2/introrust-base_2-webfont.woff2');
+    src: url('https://images.livrariasaraiva.com.br/estatico/2017/promo/10-outubro/livro-e-na-saraiva/IntroRust-Base2/introrust-base_2-webfont.woff2?#iefix') format('embedded-opentype'), url('https://images.livrariasaraiva.com.br/estatico/2017/promo/10-outubro/livro-e-na-saraiva/IntroRust-Base2/introrust-base_2-webfont.woff2') format('woff2'), url('https://images.livrariasaraiva.com.br/estatico/2017/promo/10-outubro/livro-e-na-saraiva/IntroRust-Base2/introrust-base_2-webfont.woff') format('woff'), url('https://images.livrariasaraiva.com.br/estatico/2017/promo/10-outubro/livro-e-na-saraiva/IntroRust-Base2/introrust-base_2-webfont.ttf') format('truetype'), url('https://images.livrariasaraiva.com.br/estatico/2017/promo/10-outubro/livro-e-na-saraiva/IntroRust-Base2/introrust-base_2-webfont.svg#introrust-base_2-webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.topo__black-friday {
+    background: #000;
+    position: relative;
+    z-index: 1;
+}
+
+.topo__black-friday:after {
+    content: '';
+    height: 617px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: url(../img/bg_header_ybf.jpg) repeat scroll center;
+    background-size: contain;
+}
+
+.linha.first {
+    margin-top: -40px;
+}
+
+.topo__black-friday .topo__img {
+    object-fit: contain;
+    padding: 0px 30px;
+}
+
+.box__visa a {
+    background-color: #161616;
+    height: 79px;
+    color: #ffca00;
+    font-family: "Work Sans";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28.97px;
+    text-transform: uppercase;
+    letter-spacing: -0.51px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.products .product {
+    font-family: 'Work Sans', sans-serif;
+    position: relative;
+    margin-bottom: 36px;
+    height: 100%;
+}
+
+.products .product.slick .slick-list, .products .product.black [data-tipo-produto] {
+    box-shadow: 2px 3px 29px rgba(0, 0, 0, 0.15);
+}
+
+.products .product .slick-dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+}
+
+.products .product .slick-dots li {
+    margin-right: 10px;
+    border-radius: 100%;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+}
+
+.products .product .slick-dots li button {
+    background: #000;
+    cursor: pointer;
+    border: 0;
+    border-radius: 100%;
+    text-indent: -9999px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid transparent;
+    transform: scale(0.70);
+    box-shadow: 0 0 0px 3px black;
+    outline: none;
+}
+
+.products .product .slick-dots li.slick-active button {
+    border: 3px solid #ffd300;
+    box-shadow: 0 0 0px 4px black;
+}
+
+.products .product [data-tipo-produto] {
+    background: #ffd300;
+    display: flex !important;
+    justify-content: center;
+    min-height: 360px;
+    padding: 20px;
+}
+
+.products .product.black [data-tipo-produto] {
+    padding: 0px;
+}
+
+.products .product [data-tipo-produto] .product__image {
+    padding: 0px 0px 15px;
+}
+
+.products .product [data-tipo-produto] .product__image img {
+    max-height: 160px;
+}
+
+.products .product [data-tipo-produto]>div {
+    min-height: 217px;
+    width: 100%;
+}
+
+.products .product.black [data-tipo-produto] {
+    background: #161616;
+}
+
+.products .product .product__image a {
+    position: relative;
+}
+
+.products .product.has_seal .product__image a:after {
+    content: "";
+    z-index: 1;
+    background: url('../img/selo_bf.png') no-repeat scroll center;
+    position: absolute;
+    right: -35px;
+    top: 5px;
+    width: 65px;
+    height: 64px;
+}
+
+.products .product.has_seal.has_selo_parceiro .product__image a:after {
+    background: url('../img/selo-mkt-parceiro.png') no-repeat scroll center;
+}
+
+.products .product.has_seal [data-saraiva-plus="true"] .product__image a:before {
+    content: "";
+    z-index: 1;
+    background: url('../img/selo-saraiva-plus.png') no-repeat scroll center;
+    position: absolute;
+    right: -35px;
+    top: 70px;
+    width: 65px;
+    height: 64px;
+    background-size: contain;
+}
+
+.products .product .product__content {
+    color: #000;
+    padding: 0 15px;
+}
+
+.products .product .product__content h2 {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    margin: 0;
+    margin-bottom: 16px;
+    text-align: center;
+    color: #000;
+}
+
+.product .product {
+    color: #000;
+}
+
+.product .product.black {
+    color: #fff;
+}
+
+.products .product .product__content .product__price .price {
+    font-size: 16px;
+    letter-spacing: -0.5px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    text-align: center;
+    line-height: normal;
+}
+
+.products .product .product__content .product__price .price span {
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    text-align: center;
+    display: block;
+    font-size: 24px;
+    color: #000;
+}
+
+.products .product .product__content .product__price .price__installments {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.products .product .product__content .product__seller {
+    font-size: 14px;
+    font-weight: 400;
+    font-weight: 400;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.products .product.black .product__content .product__seller {
+    font-size: 12px;
+}
+
+.products .product .product__content .product__seller b {
+    font-weight: 600;
+}
+
+.products .product .product__content .product__cta a, .bt__ver_todos {
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: -0.46px;
+    padding: 15px 60px;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.products .product.slick .product__content .product__cta a {
+    margin-bottom: 30px;
+}
+
+.products .product.slick .slick-list {
+    background: #ffd300;
+}
+
+.products .product .product__content .product__cta a:hover, .bt__ver_todos:hover {
+    background-color: #d9b400;
+    color: #000;
+}
+
+.products .product.black .product__content .product__cta a:hover {
+    background-color: #ffca00;
+    color: #000;
+}
+
+.spinner {
+    margin: 100px auto 0;
+    width: 30px;
+    text-align: center;
+}
+
+.spinner>div {
+    width: 6px;
+    height: 6px;
+    background-color: #8C9BA4;
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+    0%, 80%, 100% {
+        -webkit-transform: scale(0)
+    }
+    40% {
+        -webkit-transform: scale(1.0)
+    }
+}
+
+@keyframes sk-bouncedelay {
+    0%, 80%, 100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    40% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+}
+
+/*  */
+
+.product .product.black {
+    color: #fff;
+}
+
+.product .product.black .row.no-gutters {
+    flex-direction: column;
+    align-items: center;
+}
+
+/* AJUSTES */
+
+.product .product__image .urgency__wrap+a:before {
+    display: none;
+}
+
+.product .product__image .urgency__wrap+a img {
+    max-height: 280px !important;
+}
+
+.product.black .product__image .urgency__wrap+a img {
+    max-height: 100px !important;
+}
+
+/* AJUSTES */
+
+.products .product.black .product__content {
+    line-height: 1.1;
+    padding: 0px 15px 15px;
+}
+
+.products .product .product__image img.loading {
+    max-width: 40px;
+    height: auto !important;
+    object-fit: contain !important;
+}
+
+.products .product .product__image a {
+    padding-top: 10px;
+    max-width: calc(100% - 35px);
+    text-decoration: none;
+}
+
+.products .product.black .product__image img {
+    object-fit: contain;
+    height: 160px;
+    padding-top: 10px;
+    max-width: 100%;
+}
+
+.products .product.black .product__content h2 {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+    margin-bottom: 9px;
+}
+
+.products .product.black .product__content .product__price .price {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    margin-bottom: 5px;
+}
+
+.products .product.black .product__content .product__price .price span {
+    color: #ffde00;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.72px;
+}
+
+.products .product.black .product__content .product__price .price__installments {
+    margin-bottom: 8px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #fefefe;
+    letter-spacing: -0.5px;
+}
+
+.products .product.black .product__content .product__price .price__installments span {
+    color: #ffde00;
+}
+
+.products .product.black .product__content .product__seller {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.products .product.black .product__content .product__cta a {
+    padding: 10px 40px;
+    border: 1px solid #434343;
+    font-size: 12px;
+}
+
+.box__exclusivos {
+    color: #ffffff;
+    font-family: "Work Sans";
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: -1px;
+    /* background: url('../img/icon_book.png') no-repeat left center; */
+    /* padding-left: 57px; */
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.bt__ver_todos {
+    padding: 10px 25px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    margin-bottom: 20px;
+}
+
+.topo__black-friday .banner.big {
+    margin: 40px auto;
+}
+
+.topo__black-friday .banner.small {
+    margin-bottom: 36px;
+}
+
+.topo__black-friday .banner.small a {
+    height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 3px 29px rgba(0, 0, 0, 0.15);
+}
+
+.topo__black-friday .banner[data-info="[3]"] a {
+    background: #ff9f01;
+}
+
+.topo__black-friday .banner[data-info="[4]"] a {
+    background: #6b0a04;
+}
+
+.topo__black-friday .categories {
+    background: #161616;
+    margin: 0 auto 40px;
+    padding-bottom: 20px;
+}
+
+.title__categories {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -1px;
+    margin: 45px auto;
+    text-align: center;
+}
+
+.title__categories img {
+    vertical-align: middle;
+}
+
+.title__categories b {
+    color: #ffdd00;
+    font-weight: 600;
+}
+
+.box__categories a {
+    box-shadow: 1px 4px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #000;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 23px;
+    width: 100%;
+    padding: 20px;
+}
+
+.box__categories a:hover {
+    background: #ffdd00;
+    color: #000;
+}
+
+.box__categories a:hover h3, .box__categories a:hover p {
+    color: inherit;
+    filter: brightness(-100%);
+}
+
+.box__categories a>h3 {
+    margin: 0px auto;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: "Intro Head";
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 400;
+    background: no-repeat top center;
+    padding-top: 50px;
+    margin-bottom: 20px;
+}
+
+.box__categories a>.livros {
+    background-image: url('../img/icon_book.png')
+}
+
+.box__categories a>.smartphones {
+    background-image: url('../img/icon_smart.png')
+}
+
+.box__categories a>.games {
+    background-image: url('../img/icon_games.png')
+}
+
+.box__categories a>.musica {
+    background-image: url('../img/icon_musica.png')
+}
+
+.box__categories a>.filmes {
+    background-image: url('../img/icon_filmes.png')
+}
+
+.box__categories a>.informatica {
+    background-image: url('../img/icon_informatica.png')
+}
+
+.box__categories a>.importados {
+    background-image: url('../img/icon_importado.png')
+}
+
+.box__categories a>.e-books {
+    background-image: url('../img/icon_ebook.png')
+}
+
+.box__categories a>.papelaria {
+    background-image: url('../img/icon_papelaria.png')
+}
+
+.box__categories a>p {
+    color: #979797;
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.outras_ofertas {
+    background-color: #e8e8e8;
+    padding-top: 70px;
+}
+
+.outras_ofertas h3 {
+    color: #1f1f1f;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -1.04px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.outras_ofertas .products .product [data-tipo-produto] {
+    background-color: #4f4f4f;
+}
+
+.outras_ofertas .products .product.black [data-tipo-produto] {
+    background-color: #fff;
+}
+
+.outras_ofertas .products .product [data-tipo-produto] .product__title, .outras_ofertas .products .product .product__content .product__price .price span, .outras_ofertas .products .product .product__content .product__price .price, .outras_ofertas .products .product .product__content .product__price .price__installments, .outras_ofertas .products .product .product__content .product__price .price__installments span, .outras_ofertas .products .product .product__content .product__seller {
+    color: #fff;
+}
+
+.outras_ofertas .products .product .product__content .product__price .price span {
+    color: #ffdd00;
+}
+
+.outras_ofertas .products .product.black [data-tipo-produto] .product__title, .outras_ofertas .products .product.black .product__content .product__price .price span, .outras_ofertas .products .product.black .product__content .product__price .price, .outras_ofertas .products .product.black .product__content .product__price .price__installments, .outras_ofertas .products .product.black .product__content .product__price .price__installments span, .outras_ofertas .products .product.black .product__content .product__seller {
+    color: #000;
+}
+
+/* VITRINE */
+
+.product__comum.nova {
+    background: #161616;
+}
+
+[data-vitrine] {
+    overflow: visible;
+}
+
+[data-vitrine] .product__comum .product__info .product__title, [data-vitrine] .product__comum .product__info .product__seller, [data-vitrine] .product__comum .content__action button, [data-vitrine] .product__comum .product__price .product__conditions, [data-vitrine] .product__comum .product__info .book__author {
+    color: #fff;
+}
+
+[data-vitrine] .product__comum .product__info .product__status {
+    height: 0;
+}
+
+[data-vitrine] .product__comum .box__product {
+    height: auto;
+}
+
+[data-vitrine] .product__comum .product__pic figure>.tagSale {
+    color: #000;
+}
+
+[data-vitrine] .product__comum .product__price .price__after .price {
+    color: #ffdd00;
+}
+
+[data-vitrine].border__default .product__comum.nova {
+    border-color: #000;
+}
+
+[data-vitrine] .product__comum .product__rating .rating__grade {
+    filter: invert(100%);
+}
+
+[data-vitrine] .product__comum .product__rating .rating__grade .grade {
+    filter: invert(100%);
+}
+
+[data-vitrine] .product__comum .icon.icon-btn:before {
+    filter: contrast(0%);
+}
+
+[data-vitrine] .slick-arrow {
+    display: none !important;
+}
+
+[data-vitrine] .content__action button.btn-secondary:hover .icon.icon-btn:before {
+    filter: contrast(100%);
+}
+
+[data-vitrine] .product__comum .icon.icon-btn:before {
+    filter: contrast(0%);
+}
+
+.urgency__wrap .urgency {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    margin-bottom: 5px;
+    position: relative;
+    width: 100%;
+    max-width: 283px;
+    padding-left: 13px;
+}
+
+.urgency__wrap .urgency .urgency__oferta {
+    border-radius: 14px;
+    width: 100%;
+    position: relative;
+    background-color: #000;
+    color: #fff;
+    z-index: 0;
+    padding: 4px 0px 4px 20px;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 12.49px;
+    text-transform: uppercase;
+}
+
+.product.black .urgency__wrap .urgency .urgency__oferta {
+    background-color: #ffca00;
+    color: #111111;
+}
+
+.urgency__wrap .urgency .urgency__content {
+    position: absolute;
+    right: 0;
+    width: calc(100% - 94px);
+    border: 1px solid #333333;
+    border-radius: 18px;
+    background-color: #282828;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.urgency__wrap .urgency .icon-clock {
+    width: 30px;
+    height: 19px;
+    background: url(../img/icon_relogio.png) no-repeat scroll center;
+    display: inline-block;
+    z-index: 2;
+    margin-right: 5px;
+}
+
+.urgency__wrap .urgency .urgency__remaining-time {
+    text-align: left;
+    color: #ffca00;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 26.33px;
+    margin-right: 5px;
+}
+
+.urgency__wrap .urgency .urgency__remaining-items {
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 9.49px;
+    text-transform: uppercase;
+}
+
+.tj {
+    padding: 20px 0px;
+}
+
+.tj * {
+    color: #fff;
+    font-size: 11px;
+    margin: 5px 0px;
+}
+
+/*  RESPONSIVO */
+
+@media only screen and (min-width: 1023px) {
+    [data-vitrine] .slick-arrow {
+        display: inline-block !important;
+    }
+    .linha.first {
+        margin-top: -70px;
+    }
+    .topo__black-friday {
+        margin-top: -25px;
+    }
+    .products .product [data-tipo-produto] .product__image {
+        padding: 0px 15px;
+    }
+    .products .product [data-tipo-produto] .product__image img {
+        max-height: 290px;
+    }
+    .products .product [data-tipo-produto] {
+        padding: 0;
+        margin: 0px;
+        height: 360px;
+    }
+    .bt__ver_todos {
+        margin-bottom: 20px;
+    }
+    .box__exclusivos {
+        text-align: left;
+    }
+}
